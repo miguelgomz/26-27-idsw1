@@ -1,0 +1,11 @@
+@startuml
+title Farmear Aura
+
+rectangle Individuo
+rectangle Acción
+rectangle Aura
+
+Individuo -right-> Acción : realiza
+Acción -down-> Aura : aporta
+Aura -left-> Individuo : beneficia a
+@enduml
