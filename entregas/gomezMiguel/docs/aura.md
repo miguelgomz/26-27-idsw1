@@ -2,7 +2,9 @@
 
 ## 1. Farmear aura
 
-"Farmear aura" consiste en hacer cosas que mejoren la imagen que los demás tienen de uno esto se puede alcanzar haciendo gestos o efectos de sonido . Puede hacerse de forma deliberada, buscando quedar bien, o suceder sin intención como efecto de la manera en que alguien se comporta en cada situación.
+"Farmear aura" consiste en hacer cosas que mejoren la imagen que los demás tienen de uno, por ejemplo mediante gestos o efectos de sonido. Puede hacerse de forma deliberada, buscando quedar bien, o suceder sin intención como efecto de la manera en que alguien se comporta en cada situación.
+
+![Diagrama Farmear Aura](./imagenes/aura.png)
 
 ### Supuestos
 * El aura no es algo físico ni medible; es la imagen o reputación que los demás se forman de una persona.
@@ -14,10 +16,10 @@
 ### Glosario
 * **Persona**: Cualquier individuo; puede realizar acciones o ver cómo otros las realizan.
 * **Aura**: Imagen o reputación que los demás tienen de una persona, y que puede subir o bajar.
-* **Farmear aura**: Hacer cosas con la intención de que tu aura aumente.
-* **Acción**: Algo concreto que hace una persona y que otros pueden observar.
+* **Acción**: Algo concreto que hace una persona y que otros pueden observar, como un gesto o un efecto de sonido.
 * **Situación**: Contexto en el que ocurre una acción: dónde, cuándo y con quién.
 
 ### Decisiones discutibles
 * **`Aura` como concepto propio**: Se podría haber representado como un número dentro de `Persona`, como una puntuación. Pero el aura no la tiene la persona por sí sola: depende de cómo la perciben los demás.
-* **Sin concepto `Observador`**: En el diagrama, la relación `Acción -> Persona : es percibida por` indica que quien ve la acción es otra persona. Un observador no deja de ser una persona, así que crear una clase aparte complicaría el modelo sin aportar nada nuevo.
+* **Sin concepto `Observador`**: La relación `Acción -> Persona : es percibida por` indica que quien ve la acción es otra persona. Un observador no deja de ser una persona, así que crear una clase aparte complicaría el modelo sin aportar nada nuevo.
+* **`Situación` como concepto propio**: No es un dato que "tenga" la acción, sino un escenario externo que puede afectar a varias acciones a la vez.
