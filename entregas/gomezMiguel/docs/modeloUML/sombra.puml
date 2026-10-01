@@ -1,12 +1,12 @@
 @startuml
 title Sombra
 
-rectangle Luz
+rectangle "Fuente de luz" as Luz
 rectangle Objeto
 rectangle Sombra
 rectangle Superficie
 
 Luz -up-> Objeto : alcanza
 Objeto -right-> Sombra : genera
-Sombra -down-> Superficie : se refleja en
+Sombra -down-> Superficie : se proyecta sobre
 @enduml

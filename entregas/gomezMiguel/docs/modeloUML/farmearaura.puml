@@ -1,11 +1,14 @@
 @startuml
 title Farmear Aura
 
-rectangle Individuo
+rectangle Persona
 rectangle Acción
 rectangle Aura
+rectangle Situación
 
-Individuo -right-> Acción : realiza
-Acción -down-> Aura : aporta
-Aura -left-> Individuo : beneficia a
+Persona -right-> Acción : realiza
+Acción -down-> Aura : modifica
+Aura -left-> Persona : define la imagen de
+Situación -left-> Acción : enmarca
+Acción ..> Persona : es percibida por
 @enduml
